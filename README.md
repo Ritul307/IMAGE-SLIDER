@@ -24,3 +24,4 @@ In this project, **JavaScript** makes the slider interactive:
 - Updates the **scrollbar thumb** position while scrolling
 - Allows dragging the scrollbar thumb to move images
 - Adjusts scrollbar thumb size when resizing the window
+   website link https://ritul307.github.io/IMAGE-SLIDER/
