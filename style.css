@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: #f4f4f4;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  width: 95%;
+}
+
+.slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+/* Image list styling */
+.image-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 14px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+  
+}
+
+.image-list::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.image-item {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Navigation buttons */
+.slide-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+#prev-slide {
+  left: -20px;
+}
+
+#next-slide {
+  right: -20px;
+}
+
+/* Custom scrollbar */
+.slider-scrollbar {
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.scrollbar-thumb {
+  height: 100%;
+  width: 20%; /* Will adjust with JS */
+  background: #333;
+  border-radius: inherit;
+  position: absolute;
+  left: 0;
+  cursor: grab;
+}
+
+.scrollbar-thumb:active {
+  cursor: grabbing;
+}
